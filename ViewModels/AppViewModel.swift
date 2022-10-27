@@ -2,8 +2,9 @@
 //  AppViewModel.swift
 //  verdantVegan2
 //
-//  Created by Elizabeth Pponce on 10/26/22.
+//  Created by Elizabeth Clarkson on 10/26/22.
 //
+
 
 import SwiftUI
 import FirebaseAuth
@@ -50,4 +51,5 @@ class AppViewModel: ObservableObject {
     }
     
 }
+
 

@@ -9,29 +9,32 @@ import SwiftUI
 import Firebase
 import UIKit
 
+
+
 @main
-struct verdantVegan2App: App {
+struct verdantVeganApp: App {
     
     init() {
         FirebaseApp.configure()
     }
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
-    @StateObject var listViewModel: ListViewModel = ListViewModel()
-    @StateObject var ingredientViewModel: IngredientViewModel = IngredientViewModel()
+
 
     var body: some Scene {
         WindowGroup {
-//            NavigationView{
             let viewModel = AppViewModel()
             LoginPageView()
                 .environmentObject(viewModel)
-//            }
                 .navigationViewStyle(.stack)
-            //    .environmentObject(listViewModel)
-            //    .environmentObject(ingredientViewModel)
-           
         }
     }
+}
+
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    var window: UIWindow?
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+           return true
+        }
 }
