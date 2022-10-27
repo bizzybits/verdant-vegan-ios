@@ -89,7 +89,7 @@ struct RecipeListView: View {
                 self.recipeModels = DB_Manager().getRecipes()
             })
             .padding()
-            .navigationBarTitle("SQLite")
+            .navigationBarTitle("Cruelty Free Recipes")
         
        
         }
