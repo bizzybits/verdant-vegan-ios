@@ -1,3 +1,5 @@
 verdantVegan2/GoogleService-Info.plist
 **/UserInterfaceState.xcuserstate
 .DS_Store
+/GoogleService-Info.plist
+.GoogleService-Info.plist
