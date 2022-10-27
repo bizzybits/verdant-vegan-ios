@@ -51,7 +51,7 @@ struct SignInView: View {
             .padding()
             Spacer()
         }
-        .navigationTitle("Sign In")
+        .navigationTitle("Verdant Vegan")
             
         }
     }

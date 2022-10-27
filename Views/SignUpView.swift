@@ -2,7 +2,7 @@
 //  SignUpView.swift
 //  verdantVegan2
 //
-//  Created by Elizabeth Clarkson on 10/26/22.
+//  Created by Elizabeth Ponce on 10/26/22.
 //
 
 import SwiftUI
