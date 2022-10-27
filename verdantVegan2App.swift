@@ -19,7 +19,7 @@ struct verdantVeganApp: App {
     }
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-
+    @StateObject var viewModel = AppViewModel()
 
     var body: some Scene {
         WindowGroup {

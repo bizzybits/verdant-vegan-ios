@@ -11,6 +11,9 @@ struct SignUpView: View {
     
     @State var password = ""
     @State var email = ""
+    @State var alertTitle: String = ""
+    @State var showAlert: Bool = false
+    @Environment(\.presentationMode) var presentationMode
     
     @EnvironmentObject var viewModel: AppViewModel
     
@@ -50,9 +53,30 @@ struct SignUpView: View {
             Spacer()
         }
         .navigationTitle("Create Account")
-            
+    }
+    
+    func saveButtonPressed() {
+        if passwordIsReal() {
+
+            presentationMode.wrappedValue.dismiss()
         }
     }
+    
+    func passwordIsReal() -> Bool {
+        if password.count < 3 {
+            alertTitle = "Your password must be at least 6 characters long 😱"
+            showAlert.toggle()
+            return false
+        }
+        //check for swear words!
+        //show alert
+        return true
+    }
+    
+    func getAlert() -> Alert {
+        return Alert(title: Text(alertTitle))
+    }
+}
 
 
 struct SignUpView_Previews: PreviewProvider {
