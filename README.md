@@ -7,7 +7,7 @@ Oregon State University - College of Engineering
 The course was a 10 week project I designed in order to gain experience building native mobile application development. 
 A 10 week project where I spent 5 weeks on iOS and 5 weeks on Android.
 
-In this part 1, I spent 1 week 1 week of introduction time, and 4 weeks of development learning Xcode, SwiftUI, Firebase API User Authentication and SQLite database.
+In this part 1, I spent 1 week of introduction time, and 4 weeks of development learning Xcode, SwiftUI, Firebase API User Authentication and SQLite database.
 
 
 SwiftUI Recipe Saving Application with SQLite database and Firebase Authentication login flow.
